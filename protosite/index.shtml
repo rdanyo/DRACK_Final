@@ -31,71 +31,20 @@
 <body>
 
 
-<header>
-	<div id="small_banner">
-		<img src="images/header360.jpg" alt="" >
-	</div>
-	<div id="large_banner">
-		<img src="images/header1024.jpg" alt="" >
-	</div>
-</header>
+<!--#include file="header.inc"-->
+
 
 <div class="clearall"></div>
 
-<div id="search">
-<script>
-  (function() {
-    var cx = '001850982399511645661:zlsxltlxlui';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
-</div>
 
-<div id="mobile_nav">
-	<button id="toggle_btn">Menu</button>
-</div>
+<!--#include file="search.inc"-->
 
-<nav>
-	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Lectures</a>
-			<ul>
-				<li><a href="#">Week 1</a></li>
-				<li><a href="#">Week 2</a></li>
-				<li><a href="#">Week 3</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Exercises</a>
-			<ul>
-				<li><a href="#">Exercise 1</a></li>
-				<li><a href="#">Exercise 2</a></li>
-				<li><a href="#">Exercise 3</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Assignments</a>
-			<ul>
-				<li><a href="#">Assignment 1</a></li>
-				<li><a href="#">Assignment 2</a></li>
-				<li><a href="#">Assignment 3</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Resources</a>
-			<ul>
-				<li><a href="#">Resource 1</a></li>
-				<li><a href="#">Resource 2</a></li>
-				<li><a href="#">Resource 3</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Blog</a></li>
-	</ul>
-</nav>
+
+<!--#include file="mobile_nav.inc"-->
+
+
+<!--#include file="nav.inc"-->
+
 
 <div class="clearall" ></div>
 
@@ -111,16 +60,8 @@
 
 <div class="clearall"> </div>
 
-<footer>
-	<p>Web site designed by DRACK Design. Copyright 2014</p>
-	<p>[ <a href="#top">Top</a> ]</p>
-	<p>
-		<a href="http://validator.w3.org/check?uri=referer">Validator</a>
-		<a href="#">SITEMAP</a>
-	</p>
 
-	<p><a href="#">Contact</a></p>
-</footer>
+<!--#include file="footer.inc"-->
 
 
 </body>
