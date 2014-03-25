@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>COMP1950 - ProtoSite</title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='resources/css/normalize.css' rel='stylesheet' media="screen"/>
+<link rel="stylesheet" href="styles.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<script src="jquery-1.2.1.min.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function() {
+
+		// $(window).resize(function() {
+		// 	if ((width > 360) {
+ 		//		$("nav").show(450);
+		// 	}
+		// });
+
+		$("#mobile_nav").click(function(){
+			$("nav").slideToggle(450);
+		});
+
+
+	});
+</script>
+
+
+</head>
+<body>
+
+
+<header>
+	<div id="small_banner">
+		<img src="images/header360.jpg" alt="" >
+	</div>
+	<div id="large_banner">
+		<img src="images/header1024.jpg" alt="" >
+	</div>
+</header>
+
+<div class="clearall"></div>
+
+<div id="search">
+<script>
+  (function() {
+    var cx = '001850982399511645661:zlsxltlxlui';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+<div id="mobile_nav">
+	<button id="toggle_btn">Menu</button>
+</div>
+
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Lectures</a>
+			<ul>
+				<li><a href="#">Week 1</a></li>
+				<li><a href="#">Week 2</a></li>
+				<li><a href="#">Week 3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Exercises</a>
+			<ul>
+				<li><a href="#">Exercise 1</a></li>
+				<li><a href="#">Exercise 2</a></li>
+				<li><a href="#">Exercise 3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Assignments</a>
+			<ul>
+				<li><a href="#">Assignment 1</a></li>
+				<li><a href="#">Assignment 2</a></li>
+				<li><a href="#">Assignment 3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Resources</a>
+			<ul>
+				<li><a href="#">Resource 1</a></li>
+				<li><a href="#">Resource 2</a></li>
+				<li><a href="#">Resource 3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Blog</a></li>
+	</ul>
+</nav>
+
+<div class="clearall" ></div>
+
+<section id="content"><!--main content starts-->
+	<article>
+		<header>
+			<h1>COMP1950 - 2014 Welcome!</h1>
+		</header>
+
+		<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+	</article>
+</section><!--main content ends-->
+
+<div class="clearall"> </div>
+
+<footer>
+	<p>Web site designed by DRACK Design. Copyright 2014</p>
+	<p>[ <a href="#top">Top</a> ]</p>
+	<p>
+		<a href="http://validator.w3.org/check?uri=referer">Validator</a>
+		<a href="#">SITEMAP</a>
+	</p>
+
+	<p><a href="#">Contact</a></p>
+</footer>
+
+
+</body>
+</html>

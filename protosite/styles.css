@@ -1,0 +1,161 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+body{
+	margin: 0 auto;
+	padding: 0px;
+	background: #ffffff;
+	font-family: 'Source Code Pro', Helvetica, Verdana, sans-serif;
+	background: url(images/bcitbg.jpg) no-repeat center center fixed #fff;
+	background-size: cover;
+	box-shadow: 5px 5px 5px #999;
+	font-size: 0.9em;
+}
+
+.clearall {
+	clear: both;
+}
+
+body>header {
+	background-color: #717b86;
+	height: 150px;
+}
+
+h1 {
+	color: #666;
+	font-size: 1.4em;
+}
+
+h2 {
+	color: #555;
+	font-size: 1.2em;
+}
+
+img {
+		max-width: 100%;
+}
+#content {
+	padding: 20px;
+	line-height: 150%;
+}
+
+footer {
+	padding: 10px;
+	background-color: #717b86;
+	font-size: 0.9em;
+	text-align: center;
+	color: #fff;
+}
+
+@media only screen and (max-width: 360px) {
+	#large_banner {
+		display: none;
+	}
+
+	#toggle_btn {
+		/*display: block;*/
+		width:100%;
+		background-color: #efefef;
+		padding: 3px;
+	}
+
+	nav {
+		display: none;
+	}
+
+	nav ul {
+		background: #efefef;
+		padding: 0 10px;
+		list-style: none;
+	}
+
+	nav ul li {
+		width: 310px;
+		text-align: center;
+		border: 2px solid #CCC;
+		margin: 5px;
+	}
+
+	nav ul li ul li {
+		width:280px;
+		margin-bottom: 5px;
+		border: 1px dotted #CCC;
+	}
+
+	nav ul li a { text-decoration: none;color: #80b19b;display:block;}
+	nav ul li a:hover { background: #4b545f; color: #efefef;}
+
+}
+
+@media only screen and (min-width: 361px){
+	#small_banner, #mobile_nav{
+		display: none;
+	}
+
+	nav {width:850px; margin:0 auto;}
+
+	nav ul {
+		background: #efefef;
+		padding: 0 20px;
+		list-style: none;
+		position: relative;
+		display: block;
+	}
+
+	nav ul ul {
+		display: none;
+	}
+
+	nav ul li {
+		float: left;
+		width: 130px;
+		text-align: center;
+	}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+	nav ul:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+	nav ul li:hover {
+		background: #4b545f;
+	}
+
+	nav ul li:hover a {
+		color: #fff;
+	}
+
+	nav ul li a {
+		display: block;
+		padding: 10px 10px;
+		color: #757575;
+		text-decoration: none;
+	}
+
+	nav ul ul {
+		background: #757575;
+		padding: 0;
+		position: absolute;
+		top: 100%;
+	}
+
+	nav ul ul li {
+		float: none;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		position: relative;
+	}
+
+	nav ul ul li a {
+		padding: 15px 10px;
+		color: #fff;
+	}
+
+	nav ul ul li a:hover {
+		background: #4b545f;
+	}
+}
